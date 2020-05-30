@@ -1,0 +1,28 @@
+language: php
+sudo: true
+php:
+  - '7.2'
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y jq libxslt-dev zip unzip graphviz
+  - wget https://github.com/phpDocumentor/phpDocumentor2/files/2310268/phpdoc.7.2.phar.zip
+  - unzip phpdoc.7.2.phar.zip
+  - php phpdoc\(7.2\).phar -d ./src -t ./docs --ignore vendor/
+install:
+  - composer install --dev --no-interaction
+before_script:
+  - mkdir -p build/cov
+  - mkdir -p build/logs
+script:
+  - ./vendor/bin/phpunit --testdox -c phpunit.xml
+after_success:
+  - travis_retry php vendor/bin/php-coveralls -v
+# deploys the documentation, later could include semantic-release to release the package
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local-dir: docs
+  on:
+    branch: master
