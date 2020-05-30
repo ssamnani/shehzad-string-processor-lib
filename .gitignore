@@ -472,3 +472,6 @@ composer.lock
 *.css.map
 *.sass.map
 *.scss.map
+
+# To get semantic release working
+node_modules
