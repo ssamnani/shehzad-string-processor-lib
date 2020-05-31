@@ -23,7 +23,9 @@
     },
     "autoload": {
         "psr-4": {
-            "SSamnaniLib\\": "src/"
+            "SSamnaniLib\\": "src/",
+            "SSamnaniLib\\Processor\\": "src/processor",
+            "SSamnaniLib\\Output\\": "src/output"
         }
     },
     "autoload-dev": {
@@ -33,6 +35,7 @@
     },
     "scripts": {
         "test": "phpunit --verbose --testdox -c phpunit.xml",
+        "test:local": "phpunit --verbose -c phpunit.xml",
         "lint": "phpcs --standard=PSR12 src/ tests/",
         "lint-fix": "phpcbf -q --standard=PSR12 src/ tests/"
     },
