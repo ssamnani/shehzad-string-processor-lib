@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class HelloWorld | src/processor/UppercaseStringProcessor.php
+ * Class UppercaseStringProcessor | src/processor/UppercaseStringProcessor.php
  *
  * @category SSamnaniLib
  * @author Shehzad Samnani <shehzadhsamnani@gmail.com>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class HelloWorld | src/processor/AlternateCaseStringProcessor.php
+ * Class AlternateCaseStringProcessor | src/processor/AlternateCaseStringProcessor.php
  *
  * @category SSamnaniLib
  * @author Shehzad Samnani <shehzadhsamnani@gmail.com>

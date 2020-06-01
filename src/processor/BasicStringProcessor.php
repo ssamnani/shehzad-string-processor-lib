@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class HelloWorld | src/processor/BasicStringProcessor.php
+ * Class BasicStringProcessor | src/processor/BasicStringProcessor.php
  *
  * @category SSamnaniLib
  * @author Shehzad Samnani <shehzadhsamnani@gmail.com>
