@@ -47,4 +47,16 @@ class UppercaseStringProcessorTest extends TestCase
             $result
         );
     }
+
+    public function testStringProcessingNumericSpecialStringToUpper()
+    {
+        $input = "!=HelLO %1& WOrLD #$@";
+        $output = "!=HELLO %1& WORLD #$@";
+        $processor = new UppercaseStringProcessor();
+        $result = $processor->process($input);
+        $this->assertEquals(
+            $output,
+            $result
+        );
+    }
 }
