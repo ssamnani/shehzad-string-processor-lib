@@ -57,7 +57,8 @@ Semantic release for the win
 
 [Here](https://github.com/semantic-release/semantic-release)
 
-#### Room for improvements (not covered to due time constraints)
+#### Room for improvements
+Following can be improved and not covered due to time constraints
 1. Exception Handling in file operations
 2. Unit tests for more edge cases
 3. Better debugging capabilities
