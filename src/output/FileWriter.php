@@ -2,7 +2,7 @@
 
 namespace SSamnaniLib\Output;
 
-class FileWriter extends AbstractWriter
+class FileWriter implements IWriter
 {
     private $path = null;
     private $filePointer = null;
