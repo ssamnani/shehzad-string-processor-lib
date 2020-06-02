@@ -1,5 +1,7 @@
 <?php
 
+namespace SSamnaniLib\Output;
+
 interface IWriter
 {
     public function open();

@@ -12,13 +12,13 @@
 namespace SSamnaniLib\Processor;
 
 use SSamnaniLib\IStringProcessor;
-use SSamnaniLib\Output\AbstractWriter;
+use SSamnaniLib\Output\IWriter;
 
 class CSVStringProcessor implements IStringProcessor
 {
     private $writer = null;
 
-    function __construct(AbstractWriter $writer)
+    function __construct(IWriter $writer)
     {
         $this->writer = $writer;
     }
