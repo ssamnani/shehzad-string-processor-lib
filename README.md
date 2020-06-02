@@ -7,6 +7,11 @@
 # shehzad-string-processor-lib
 
 ## Overview
+This library performs string convertion to 
+1. Uppercase
+2. Alternate case (starting first letter with lowercasa)
+3. Comma separated letters of string written to a CSV file named output.txt
+4. String without change - basic string processor - it demostrates extensibility of design
 
 ### Introduction
 
@@ -18,7 +23,7 @@ Gets the power of composer in your palms
 
 1. Make sure you have a composer enabled project
 2. `composer config repositories.shehzad-string-processor-lib git https://github.com/ssamnani/shehzad-string-processor-lib.git`
-3. `composer require "ssamnani/shehzad-string-processor-lib:~1.2.0"`
+3. `composer require "ssamnani/shehzad-string-processor-lib:~1.3.0"`
 
 And you are good to go!
 
@@ -52,4 +57,9 @@ Semantic release for the win
 
 [Here](https://github.com/semantic-release/semantic-release)
 
-#### Room for improvements
+#### Room for improvements (not covered to due time constraints)
+1. Exception Handling in file operations
+2. Unit tests for more edge cases
+3. Better debugging capabilities
+4. Docker image can be improved
+5. Deployment strategy
