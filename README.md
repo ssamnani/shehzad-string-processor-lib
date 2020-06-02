@@ -4,7 +4,7 @@
 
 ### Steps
 
-1. Install docker.
+1. Install docker
 2. Install docker-compose
 3. Run `docker-compose up -d`
 4. Wait and drink some coffee meanwhile ;)
